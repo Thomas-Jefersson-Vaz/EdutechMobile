@@ -1,0 +1,16 @@
+#body{
+	background-color:black;			
+}
+.s2{
+ color: red;
+ font-size: 35px;
+}
+.p2{
+	color: red;
+	font-size: 40px;
+}
+#img1{
+ position: absolute;
+ right:30px;
+ top:10%;
+}
