@@ -1,19 +1,67 @@
 #body{
   background-color: Black;
 }
+
+#tudo{
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
 .p2{
  color: red;
 }
 .pepino{
- color: red; 
+ color: red;
+ bottom: 20px;
+ position: relative;
+ 
 }
 p1{
 color: red;  
 font-size: 15px;
 }
+#an{
+    position: relative;
+    display: block;
+    top: 1px;
+}
+
 #an:hover{
   color: black;
   
 }
-#b2
+.botão1{
+  position: absolute;
+  border: none;
+  height: 30px ;
+  width: 75px;
+  bottom: 20px;
+}
+
+.botão1:hover{
+  transition: 0.5s;
+  background: #2222dd;
+
+}
+
+.botão2{
+  position: relative;
+  left: 80px;
+  bottom: 20px;
+  height: 30px ;
+  width: 75px;
+  border: none;
+}
+
+.botão2:hover{
+  transition: 0.5s;
+  background: #ff2222;
+  
+}
+
+.dropdown{
+  bottom: 18px;
+}
+
+
 
