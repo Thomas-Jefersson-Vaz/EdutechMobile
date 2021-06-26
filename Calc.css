@@ -6,6 +6,8 @@
 }
 p{
   color: red;
+  font-family: 'Itim', cursive;
+  font-size: 40px;
 }
 p1{
 color:red;
@@ -13,6 +15,13 @@ display: block;
 }
 #dropdownMenuButton{
   color: red;
+}
+p2{
+  color: red;
+  position: relative;
+  font-size: 30px;
+  top: 25px;
+
 }
 #b1{
   position: relative;
@@ -35,9 +44,10 @@ display: block;
   background-color: #FF0000;
 }
 .b3{
-  position: relative;
-  top: 2px;
+  position: absolute;
+  top: px;
   left: 144px;
+  bottom: 504px;
   border: none;
 }
 .b3:hover{
@@ -46,4 +56,8 @@ display: block;
 }
 #caixa{
   color: red;
+  position: relative;
+  top: 20px;
+  font-size: 25px;
+  
 }
