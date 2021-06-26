@@ -1,0 +1,49 @@
+#body{
+  background-color: black;
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+p{
+  color: red;
+}
+p1{
+color:red;
+display: block;
+}
+#dropdownMenuButton{
+  color: red;
+}
+#b1{
+  position: relative;
+  top: 32px;
+  right: 248px;
+  border: none;
+}
+#b1:hover{
+  transition: 0.5s;
+  background-color: #00FF00;
+}
+.b2{
+  position: relative;
+  top: 32px;
+  right: 251px;
+  border: none;
+}
+.b2:hover{
+  transition: 0.5s;
+  background-color: #FF0000;
+}
+.b3{
+  position: relative;
+  top: 2px;
+  left: 144px;
+  border: none;
+}
+.b3:hover{
+  transition: 0.5s;
+  background-color: #FF0000;
+}
+#caixa{
+  color: red;
+}

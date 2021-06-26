@@ -1,0 +1,104 @@
+<html>
+<meta charset="utf-8">
+<head>
+<link rel="stylesheet"href="Calc.css" type="text/css"	>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <div class="p"	>
+				<p> Calculadora de idade</p>
+			</div>
+		
+			
+			
+			
+  </head>
+  <body id="body">
+  		<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" border="none" > Outros Projetos
+</button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+	<a class="dropdown-item"	href="Calculadora de idade.html"
+	> Calculadora de idade</a>
+	<a class="dropdown-item"
+href="Calculadora de taboada.html"
+> Calculadora de Taboada</a>
+  <a class="dropdown-item" href="Calc.html">
+    Calculadora Básica
+  </a>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+</div>
+ 	</div>
+ 	<p1>Calculadora</p1>
+ 	<input type="number" id="i1" placeholder="número">
+ 	<input type="number" id="i2" placeholder="número">
+ 	<input type="text" id="i3" placeholder="Sinal:+ - * / ">
+ 	
+ 	<input type="submit" onclick="calc()" value="calcular" id="b1">
+ 	<button onclick="limpar()" class="b2">Limpar</button>
+ 	<button onclick="ls()" class="b3">Limpar sinal</button>
+ 	<div id="caixa">
+ 	
+ 	</div>
+ 	
+ 	<script>
+ 	  function calc(){
+ 	    var n = document.getElementById("i1").value;
+ 	    var m = document.getElementById("i2").value;
+ 	    var i3 = document.getElementById("i3").value;
+ 	    var o = parseInt(n);
+ 	    var p = parseInt(m);
+ 	    
+ 	    if(i3=="+"){
+ 	      var q = o+p;
+ 	      mostrar(q);
+ 	    }
+ 	    if(i3=="-"){
+ 	      var q = o-p;
+ 	      mostrar(q);
+ 	    }
+ 	    if(i3=="*"){
+ 	      var q = o*p;
+ 	      mostrar(q);
+ 	    }
+ 	    if(i3=="/"){
+ 	      var q = o/p;
+ 	      mostrar(q);
+ 	    }
+ 	  
+ 	  }
+ 	  
+ 	  function mostrar(txt){
+ 	    var a = document.getElementById("caixa").innerHTML = txt;
+ 	    
+ 	  }
+ 	  function limpar(){
+	  var l1 = document.getElementById("i1");
+	  var l2 = document.getElementById("i2");
+	  l1.value = "";
+	  l2.value = "";
+	}
+ 	function ls(){
+	  var l = document.getElementById("i3");
+	  l.value = "";
+	}
+ 	  
+ 	</script>
+ 	</body>
+ 	</html>
+ 
+ 
