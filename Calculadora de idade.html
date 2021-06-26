@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet"href="Calculadora de idade.css" type="text/css"	>
+<div id="tudo">
+			<div class="p2"	>
+				<p2> Calculadora de idade</p2>
+			</div>
+				<br>
+				
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+		
+					<head>
+						
+						<body id="body">
+		<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" border="none" > Outros Projetos
+</button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+	<a class="dropdown-item"	href="Calculadora de idade.html"
+	> Calculadora de idade</a>
+	<a class="dropdown-item"
+href="Calculadora de taboada.html"
+> Calculadora de Taboada</a>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+</div>
+ 	</div>
+	<div id="pergunta">
+	  <label class="pepino" for="an">seu ano de nascimento
+	  <input type="number" id="an" placeholder="Ex: 1999">
+	  </label>
+	</div>
+
+	  <div id="b2">
+	  <input type="submit" onclick="calc()" value="calcular" class="botão1">
+	  </div>
+	  <div id="b2">
+	  <button onclick="limpar()" class="botão2">Limpar</button>
+	  </div>
+	  <div id="caixa">
+	    
+	  </div>
+	    
+	<script>
+	function pularlinha(){
+	  document.write("<br>" +"<br>")
+	}
+	
+	function mostra(txt){
+	 var Exibir = document.getElementById("caixa").innerHTML = txt;
+	}
+	
+	function limpar(){
+	  var l = document.getElementById("an");
+	  l.value = "";
+	}
+	
+function calc(){					
+	var x = document.getElementById("an").value;
+	<!-- pra pegar o ano correto -->
+ var d = new Date();
+	var ano = d.getFullYear();
+
+var idade = ano-x
+	
+	
+	mostra("<p1>Você tem " +idade +" anos de idade</p1>");
+	
+}	
+
+	</script>
+	
+	
+
+				</body>
+				</head>
+				</div>
+				</html>
+

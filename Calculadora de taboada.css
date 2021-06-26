@@ -1,0 +1,64 @@
+t1{
+font-size:40px;
+font-family: 'Itim', cursive;
+color: red;
+}
+#body{
+  position: relative;
+  top: 6px;
+  left: 15px;
+  display: block;
+	background-color: black;			
+}
+#bnt-button{
+font-family: 'Anton', cursive;
+}
+#bnt-button2{
+color: red;
+}
+#bnt-button3{
+  color: red;
+}
+#dropdownMenuButton{
+  color: red;
+}
+p1{
+color: red;
+font-family: 'Girassol', cursive;
+}
+p2{
+color: red;
+font-family: 'Girassol', cursive;
+}
+#l1{
+  position: relative;
+  bottom: 73px;
+  color: red;
+  display: block;
+}
+#b1{
+  position: relative;
+  top: 30px;
+  right: 155px;
+  border: none;
+}
+#b2{
+  position: relative;
+  left: 245px;
+  bottom: 79px;
+  border: none;
+  
+}
+#b2:hover{
+  transition: 0.5s;
+  background: #00FF00;
+}
+#caixa{
+  position: relative;
+  bottom: 70px;
+}
+#r{
+position: relative;
+bottom: 70px;
+}
+   
