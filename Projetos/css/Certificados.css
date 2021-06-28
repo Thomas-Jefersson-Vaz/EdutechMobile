@@ -1,0 +1,25 @@
+#body{
+  background-color: Black;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+h{
+  color: red;
+  font-family: 'Itim',cursive;
+  font-size: 15px;
+}
+p1,p2,p3,p4{
+color: red;
+font-size: 15px;
+}
+#dropdownMenuButton{
+  color: red;
+}
+.a2{
+  position: relative;
+  
+  
+  border: none;
+  padding: none;
+}
