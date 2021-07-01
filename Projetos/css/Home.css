@@ -12,63 +12,27 @@ color: red;
 font-size: 40px;
 font-family: 'Itim', cursive;
 }
-#a1{
-position: relative;
-left: 15px;
-bottom: 63px;
+.l{
+ font-size: 30px;
 }
-.l1{
-position: relative;
-bottom: 15px;
-}
-#a2{
-  position: relative;
-  bottom: 88px;
+.a{
+  position: absolute;
   left: 15px;
-}
-.l2{
-  position: relative;
-  bottom: 40px;
-}
-#a3{
-  position: relative;
-  bottom: 113px;
-  left: 15px;
-}
-.l3{
- position: relative;
- bottom: 65px;
-}
-#a4{
- position: relative;
- bottom: 138px;
- left: 15px;
-}
-.l4{
- position: relative;
- bottom: 90px;
-}
-li{
-font-size: 30px;
-color: red;
-}
-a{
+  text-decoration: none;
+  color: red;
   font-size: 30px;
+  
 }
-a:link{
-  text-decoration: none;
-  color: red;
+.a:hover{
+  text-decoration: underline;
+  color: white ;
+  
 }
-a:visited{
-  text-decoration: none;
-  color: red;
+.a:active{
+  text-decoration: underline;
+  color: white ;
 }
-a:hover{
-  text-decoration: none;
-  color: red;
+#b{
+ position: relative;
+ bottom: 40px;
 }
-a:active{
-  text-decoration: none;
-  color: red;
-}
-
