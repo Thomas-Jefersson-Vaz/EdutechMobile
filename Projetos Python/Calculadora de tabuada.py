@@ -1,0 +1,23 @@
+import random
+import time
+name = input("Escreva seu nome: ")
+
+time.sleep(0.5) 
+a = random.randint(1111,9999)
+print("Gerando código")
+time.sleep(1)
+print(name,", seu código é: ",a)
+time.sleep(1)
+n = int(input("qual o número ? "))
+time.sleep(1.5)
+print("Resultado: ")
+print(n,"× 1=",n * 1)
+print(n,"× 2=",n * 2)
+print(n,"× 3=",n * 3)
+print(n,"× 4=",n * 4)
+print(n,"× 5=",n * 5)
+print(n,"× 6=",n * 6)
+print(n,"× 7=",n * 7)
+print(n,"× 8=",n * 8)
+print(n,"× 9=",n * 9)
+print(n,"× 10=",n * 10) 
