@@ -65,25 +65,19 @@ href="Calc.html">Calculadora Básica </a>
 				
 <script>
 	function calc(){
-	 	var numero = document.getElementById("b1").value;
-   mostra(
-     "<p1>"
-      +"1x" +numero +"=" +numero*1 +"<br>"
-      +"2x" +numero +"=" +numero*2 +"<br>"
-      +"3x" +numero +"=" +numero*3 +"<br>" 
-      +"4x" +numero +"=" +numero*4 +"<br>"
-      +"5x" +numero +"=" +numero*5 +"<br>"
-      +"6x" +numero +"=" +numero*6 +"<br>"
-      +"7x" +numero +"=" +numero*7 +"<br>"
-      +"8x" +numero +"=" +numero*8 +"<br>"
-      +"9x" +numero +"=" +numero*9 +"<br>"
-      +"10x" +numero +"=" +numero*10 +"<br>"
-    +"</p1>"
-     );
-   
+	  document.getElementById("caixa").innerHTML = ""
+	 	var numero = document.getElementById("b1").value
+	 	var i = 0
+	 	for(let i=0; i<=10;i++){
+	 	var c =parseInt((i*numero))
+     mostra(
+       `<br> ${i} × ${numero} = ${c}`
+
+           );
+      }
 	}
 	function mostra(txt){
-	  var Exibir = document.getElementById("caixa").innerHTML = txt;
+	  var Exibir = document.getElementById("caixa").innerHTML += txt;
 	}
 	
 				
