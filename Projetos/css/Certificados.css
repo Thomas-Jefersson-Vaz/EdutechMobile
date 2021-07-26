@@ -1,8 +1,8 @@
 #body{
   background-color: Black;
-  position: relative;
-  top: 5px;
-  left: 5px;
+  position: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 h{
   color: red;
@@ -13,11 +13,14 @@ p1{
 color: red;
 font-size: 15px;
 }
+.p{
+ padding: 0px 50px 0px 0px;
+}
 #dropdownMenuButton{
   color: red;
 }
 .a2{
-  position: relative;
+  width: 100vw;
   
   
   border: none;
