@@ -1,0 +1,23 @@
+*{
+  color: Red;
+}
+body,html{
+  height: 100%;
+}
+body{
+  background-color: black;
+  font-size: larger;
+}
+#h1{
+  height: 7%;
+  margin: 0.5%;
+  margin-right: 82%;
+}
+#bnt-button{
+  margin-top: 10px;
+  margin-right: 86%;
+  margin-bottom: 10px;
+}
+.div1{
+  margin-bottom: 10px;
+}
