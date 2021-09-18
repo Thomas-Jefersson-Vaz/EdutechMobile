@@ -7,7 +7,9 @@ while True:
   a = input("primeiro número: ")         
   b = input("segundo número: ")
   print("Escolha o sinal:")
-  c = input(" [+] \n [-] \n [×] \n [÷] \n")             
+  c = input(" [+] \n [-] \n [×] \n [÷] \n")
+  a = int(a)
+  b = int(b)             
   print("\n") 
   if a.isnumeric() == True & b.isnumeric() == True:       
     if c == "+":
