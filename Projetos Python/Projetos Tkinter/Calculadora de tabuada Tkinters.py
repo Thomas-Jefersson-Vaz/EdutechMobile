@@ -4,22 +4,43 @@ def calc():
   n = e1.get()
   if n.isnumeric():
     n = int(n)
-    for i in range(0,11):
-      txt.set(
-      f"{1} x {n} = {1*n} \n"
-      f"{2} x {n} = {2*n} \n"
-      f"{3} x {n} = {3*n} \n"
-      f"{4} x {n} = {4*n} \n"
-      f"{5} x {n} = {5*n} \n"
-      f"{6} x {n} = {6*n} \n"
-      f"{7} x {n} = {7*n} \n" 
-      f"{8} x {n} = {8*n} \n" 
-      f"{9} x {n} = {9*n} \n" 
-      f"{10} x {n} = {10*n}")
+    t1.delete(1.0, END)
+    if txta == 11:
+      for i in range(0,txta):
+        t = int(txta)
+        a = f"{i} x {n} = {i*n} \n"
+        t1.insert(END, a)
+    if txta == 101:
+      for i in range(0,txta):
+        t = int(txta)
+        a = f"{i} x {n} = {i*n} \n"
+        t1.insert(END, a)
+    if txta == 1001:
+      for i in range(0,txta):
+        t = int(txta)
+        a = f"{i} x {n} = {i*n} \n"
+        t1.insert(END, a)
   else:
-    txt.set("Por Favor coloque um número") 
-    
-       
+    t1.delete(1.0, END)
+    a = "Por Favor coloque um número"
+    t1.insert(END, a) 
+
+def n2():
+  global txta
+  txta = 11
+def n3():
+  global txta
+  txta = 101
+def n4():
+  global txta
+  txta = 1001
+def lim():
+  t1.delete(1.0, END)
+  e1.delete(0, END)
+
+
+
+
 window = Tk()
 window.title("Calculadora de tabuada")
 
@@ -35,18 +56,49 @@ b1 = Button(
   text="calcular",
   command=calc
 )
-txt = StringVar()
-txt.set("")
 
-l2 = Label(
+t1 = Text(window, width=15)
+
+txta = IntVar()
+txta.set("")
+
+b5 = Button(
   window,
-  textvariable=txt
+  text="Limpar tudo",
+  command=lim
+)
+
+l3 = Label(
+  window,
+  text="Escolha até onde vai sua tabuada"
+)
+
+b2 = Button(
+  window,
+  text="1-10",
+  command=n2
+)
+
+b3 = Button(
+  window,
+  text="1-100",
+  command=n3
+)
+b4 = Button(
+  window,
+  text="1-1000",
+  command=n4
 )
 #grids
 l1.grid(row=0, column=0)
 e1.grid(row=0, column=1)
 b1.grid(row=0, column=2)
-l2.grid(row=1, column=1)
+t1.grid(row=3, column=1)
+l3.grid(row=1, column=0)
+b2.grid(row=2, column=0)
+b3.grid(row=2, column=1)
+b4.grid(row=2, column=2)
+b5.grid(row=3, column=0)
 
 
 window.mainloop()
