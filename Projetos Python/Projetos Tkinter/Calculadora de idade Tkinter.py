@@ -7,7 +7,11 @@ def calcular():
   date = datetime.date.today()
   year = int(date.strftime("%Y"))
   if r1.isnumeric():
-    if  r2 == "N" or r2 == "n" or r2 == "nao" or r2 == "não":
+    if  r2 == "S" or r2 == "s" or r2 == "sim" or r2 == "Sim":
+      r1 = int(r1)
+      r1 = year-r1
+      txt.set(r1)
+    if  r2 == "N" or r2 == "n" or r2 == "nao" or r2 == "não" or r2 == "Não":
       r1 = int(r1)
       r1 = year-r1
       r1 = r1 - 1
